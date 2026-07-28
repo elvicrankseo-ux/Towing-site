@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-chalk text-asphalt font-body antialiased;
+  }
+
+  h1, h2, h3 {
+    @apply font-display;
+  }
+
+  :focus-visible {
+    outline: 3px solid #ffb020;
+    outline-offset: 3px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.diagonal-edge {
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
+}
+
+.chain-divider {
+  background-image: radial-gradient(circle, #3a3f45 2px, transparent 2.5px);
+  background-size: 16px 16px;
+}
