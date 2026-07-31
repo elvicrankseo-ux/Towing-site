@@ -1,15 +1,11 @@
 import { business } from "@/lib/business";
-import Image from "next/image";
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-steel/20 bg-asphalt/95 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-2">
-          <Image src="/logo.png" alt={business.name} width={44} height={44} className="rounded-sm" />
-          <span className="font-display text-xl font-bold uppercase tracking-wide text-chalk">
-            {business.name}
-          </span>
+        <a href="#top" className="font-display text-xl font-bold uppercase tracking-wide text-chalk">
+          {business.name}
         </a>
         <a
           href={business.phoneHref}
