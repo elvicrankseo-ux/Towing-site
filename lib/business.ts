@@ -1,9 +1,11 @@
-// Swap these values to re-skin this template for a new towing client.
 export const business = {
-  name: "Ironline Towing",
+  name: "Akanaby Logistics Inc",
+  category: "Towing",
   tagline: "Stuck is temporary. We're already on the way.",
-  phone: "(555) 018-4420",
-  phoneHref: "tel:+15550184420",
+  phone: "(351) 235-8976",
+  phoneHref: "tel:+13512358976",
+  email: "info.akanaby@gmail.com",
+  address: "50 Tanner St, Lowell, MA",
   avgResponse: "25 min",
   serviceAreas: [
     "Downtown",
@@ -26,7 +28,7 @@ export const business = {
     },
     {
       label: "Jump Starts",
-      detail: "Dead battery on the road or in a driveway — we come to you.",
+      detail: "Dead battery on the road or in a driveway - we come to you.",
     },
     {
       label: "Lockout Service",
@@ -56,6 +58,11 @@ export const business = {
       quote:
         "Locked my keys in the car outside a client meeting. Fixed in under fifteen minutes.",
       name: "S. Patel",
+    },
+    {
+      quote:
+        "Professional, fast, and fair pricing. Akanaby Logistics is who I call every time.",
+      name: "J. Thompson",
     },
   ],
 };
